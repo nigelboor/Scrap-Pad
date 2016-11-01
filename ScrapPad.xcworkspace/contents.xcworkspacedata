@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:404.html">
+   </FileRef>
+   <FileRef
+      location = "group:apple-touch-icon-57x57-precomposed.png">
+   </FileRef>
+   <FileRef
+      location = "group:apple-touch-icon-72x72-precomposed.png">
+   </FileRef>
+   <FileRef
+      location = "group:apple-touch-icon-114x114-precomposed.png">
+   </FileRef>
+   <FileRef
+      location = "group:apple-touch-icon-precomposed.png">
+   </FileRef>
+   <FileRef
+      location = "group:apple-touch-icon.png">
+   </FileRef>
+   <FileRef
+      location = "group:build">
+   </FileRef>
+   <FileRef
+      location = "group:crossdomain.xml">
+   </FileRef>
+   <FileRef
+      location = "group:css">
+   </FileRef>
+   <FileRef
+      location = "group:ethnic-monitoring.html">
+   </FileRef>
+   <FileRef
+      location = "group:favicon.ico">
+   </FileRef>
+   <FileRef
+      location = "group:humans.txt">
+   </FileRef>
+   <FileRef
+      location = "group:img">
+   </FileRef>
+   <FileRef
+      location = "group:index-secondary.html">
+   </FileRef>
+   <FileRef
+      location = "group:index.html">
+   </FileRef>
+   <FileRef
+      location = "group:js">
+   </FileRef>
+   <FileRef
+      location = "group:MARF-printable.html">
+   </FileRef>
+   <FileRef
+      location = "group:robots.txt">
+   </FileRef>
+   <FileRef
+      location = "group:ScrapPad.zip">
+   </FileRef>
+   <FileRef
+      location = "group:test">
+   </FileRef>
+</Workspace>

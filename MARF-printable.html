@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>MARF-printable</title>
+		<meta name="description" content="">
+		<meta name="author" content="nboor">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>MARF-printable</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+			<div>
+				<h1><span style="font-family: arial,helvetica,sans-serif;">Form: {form_name}</span></h1>
+				<p>
+					<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Reference number: {summary_ref}.</span>
+				</p>
+				<hr />
+				<h2><span style="font-family: arial,helvetica,sans-serif;">Consent</span></h2>
+				<table cellpadding="2px" cellspacing="0px" border="0" width="98%">
+					<tbody>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Have you already advice from a community social worker?</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{alreadyHadAdvice}</span></td>
+						</tr>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Name of CSW</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{nameOfCSW}</span></td>
+						</tr>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Date CSW advice given</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{dateCSWAdvice}</span></td>
+						</tr>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Other comments on CSW advice</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{cswOtherComments}</span></td>
+						</tr>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Parents consented</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{parentsGivenConsent}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Reason for "No"</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{reasonNotConsent}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Details of risk</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{detailsOfRisk}</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 class="page-break" style="page-break-before: always;"><span style="font-family: arial,helvetica,sans-serif;">Details of the Referral</span></h2>
+				<table cellpadding="2px" cellspacing="0px" border="0" width="98%">
+					<tbody>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Name of practitioner</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{nameOfPractitioner}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Organisation</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{organisation}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">School</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{school}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Referrer address</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{referrersAddress/FullAddress}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Telephone</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{phoneNumber}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Mobile</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{mobileNumber}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Email</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{email}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Relationship to child</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{relationshipToChild}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Anonymity requested</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{referrerAnonymous}</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 class="page-break" style="page-break-before: always;"><span style="font-family: arial,helvetica,sans-serif;">Identifying Details</span></h2>
+				<h3><span style="font-family: arial,helvetica,sans-serif;">Details of children and young people in the family</span></h3>
+				<div>
+					<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">@af:repeat({familiyMembers})</span>
+				</div>
+				<table cellpadding="2px" cellspacing="0px" border="0" width="98%">
+					<tbody>
+						<tr>
+							<td colspan="2">
+							<p>
+								<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;"><strong>{familiyMembers/childName}</strong></span>
+							</p></td>
+						</tr>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Date of birth</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/dateOfBirthOrEstimated}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Gender</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/gender}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Address</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/FullAddress}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">NHS Number</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/nhsNumberifKnown}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">School</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/school}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">UPN Number</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/upnNumberifKnown}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Health Visitor</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/healthVisitorOrSchoolNurse}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Ethnicity</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/ethnicity}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Disability</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/disability}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Language</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/language}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Religion</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{familiyMembers/religion}</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">@endaf:repeat</span>
+				</div>
+				<h3><span style="font-family: arial,helvetica,sans-serif;">Details of parents/carers/household members</span></h3>
+				<div>
+					<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">@af:repeat({PCHM})</span>
+				</div>
+				<table cellpadding="2px" cellspacing="0px" border="0" width="98%">
+					<tbody>
+						<tr>
+							<td colspan="2">
+							<p>
+								<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;"><strong>{PCHM/name}</strong></span>
+							</p></td>
+						</tr>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Date of Birth</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{PCHM/dateOfBirth}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Gender</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{PCHM/gender}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Relationship to child</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{PCHM/relationship}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Phone number</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{PCHM/phoneNumber}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Address</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{PCHM/FullAddress}</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">@endaf:repeat</span>
+				</div>
+				<h2 class="page-break" style="page-break-before: always;"><span style="font-family: arial,helvetica,sans-serif;">Other details</span></h2>
+				<table cellpadding="2px" cellspacing="0px" border="0" width="98%">
+					<tbody>
+						<tr>
+							<td style="width: 30%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Services already provided</span></td>
+							<td style="width: 70%;"><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{servicesProvided}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Information known</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{anyInformationAboutFamily}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Details of referral</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{detailsOfTheReferral}</span></td>
+						</tr>
+						<tr>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Child's thoughts</span></td>
+							<td><span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{childsThoughts}</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2><span style="font-family: arial,helvetica,sans-serif;">What are you worried about today?</span></h2>
+				<p>
+					<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{whatAreYouWorried}</span>
+				</p>
+				<h2><span style="font-family: arial,helvetica,sans-serif;">Expected outcome</span></h2>
+				<p>
+					<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{expectedOutcome}</span>
+				</p>
+				<h2><span style="font-family: arial,helvetica,sans-serif;">Front Door Decision (GCC only)</span></h2>
+				<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">{explanationForFrontDoor}</span>
+				<hr />
+				<p>
+					<span style="font-family: arial,helvetica,sans-serif; font-size: 12pt;">Supporting documents (if any) are attached to the original email.</span>
+				</p>
+			</div>
+		</div>
+
+		<footer>
+			<p>
+				&copy; Copyright  by nboor
+			</p>
+		</footer>
+	</body>
+</html>
