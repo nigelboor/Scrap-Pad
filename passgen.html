@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" />
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" />
+<head>
+    <title>Password generator</title>
+    <meta name="Author" content="R A Hollands Vivista 2739" />
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <script src="dictionary.js"></script>
+    <script>
+        
+        var special = "!\"$%^&*:;@\'~#,.?/{}[]()_+-=";
+        var cons = "bcdfghjklmnpqrstvwxyz";
+        var vowl = "aeiou";
+        //var now = new Date();
+
+        function randInt(m)
+        {
+            //seed = now.getSeconds();
+            var z = Math.floor(Math.random()*m);
+            return(z);
+        }
+
+    </script>
+    <style>
+        body  { margin-right: 200px }
+        table { float: right;
+            margin-left: 50px;
+            font-weight: bold }
+    </style>
+</head>
+<body>
+    <h4>Password Generator</h4>
+    <table>
+    <script>
+        var v,w,x,y,z;
+        for(i=0;i<20;i++)
+        {
+            document.write("<tr><td width=200>");
+            // Word+special+word
+            var dsize = dictionary.length;
+            v = randInt(special.length);
+            x = randInt(dsize);
+            y = randInt(dsize);
+            z = randInt(100);
+            u = dictionary[x].slice(0,1);
+            w = u.toUpperCase()+dictionary[x].slice(1);
+            document.write(w);
+            document.write(special.slice(v,v+1));
+            document.write(dictionary[y]);
+            //document.write(z);
+            document.write(" ");
+            // Cvcvcvnn
+            document.write("</td><td>");
+            var xx = randInt(21);
+            s = cons.slice(xx,xx+1).toUpperCase();
+            for(j=0;j<3;j++)
+            {
+                a = randInt(5);
+                b = randInt(21);
+                s += vowl.slice(a,a+1)+cons.slice(b,b+1);
+            }
+            s += randInt(10).toString();
+            document.write(s);
+            document.write("</td></tr>");
+        }
+    </script>
+    </table>
+    <p>
+    This page generates random passwords designed to meet the Council's
+    password complexity requirements. The first column is made from a
+    dictionary of 4- and 5-letter words joined with a special character. The
+    second is made of alternate consonants and vowels with a final digit. Both
+    have the initial letter capitalized.</p>
+
+    <p>
+    If you don't see one you like keep clicking "More..." until you see one you do.<br />
+    <button onClick="javascript:location.reload()">More...</button>
+    </p>
+
+    <h4>Notes</h4>
+    <p>
+    <a href="http://staffnet/">Return to Staffnet</a>
+    </p>
+</body>
+</html>
+
